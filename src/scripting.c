@@ -199,8 +199,6 @@ int luaRedisCommand(lua_State *lua) {
     return 1;
 }
 
-<<<<<<< HEAD
-=======
 void luaMaskCountHook(lua_State *lua, lua_Debug *ar) {
     long long elapsed;
     REDIS_NOTUSED(ar);
@@ -213,7 +211,6 @@ void luaMaskCountHook(lua_State *lua, lua_Debug *ar) {
     }
 }
 
->>>>>>> 184ebdf954a74fd3c7335a82e6dc6aaace8c1638
 void scriptingInit(void) {
     lua_State *lua = lua_open();
     luaL_openlibs(lua);
